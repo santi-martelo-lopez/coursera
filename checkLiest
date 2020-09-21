@@ -1,0 +1,18 @@
+- Add a ghost cell for viscosity
+- Ask wether the cell has been updated
+- Check if there are less iterations of the PPE solver when not fixing velocities inside the cylinder 
+	NAN
+	Do not fix velocities and set pressure to 0 inside the cylinder
+
+- Try interpolation schemes with bigger stencil
+- Create a VTK format
+- Run a dam-break with very fine mesh
+- Deactivate previous IBM
+- Fix issue in paralalle processing
+- Try using LAPACK library
+
+- IBM course
+
+- Simulation of dam-brea with fine mesh
+
+- Simulation of cylinder with turbulent model
