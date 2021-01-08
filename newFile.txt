@@ -1590,7 +1590,8 @@
 				 !                                 
 				 gcumi = dom(ib)%mucxoldmi(ii,jj,kk) ! dom(ib)%x id of the u mirror point in fluid cells
 				 if (gcumi.eq.0) then
-					write(*,*) "In checkEmergingCells gcumi = 0"
+					write(*,*) "In checkEmergingCells gcumi = 0", nn, iii, kkk
+					write(*,*) gcux, gcuy, gcuz
 				 endif
 				 gcumj = dom(ib)%mucxoldmj(ii,jj,kk) ! dom(ib)%y id of the u mirror point in fluid cells
 				 gcumk = dom(ib)%mucxoldmk(ii,jj,kk) ! dom(ib)%z id of the u mirror point in fluid cells
@@ -1771,7 +1772,8 @@
 				 !                                 
 				 gcwmi = dom(ib)%mwczoldmi(ii,jj,kk) ! dom(ib)%x id of the w mirror point in fluid cell
 				 if (gcwmi.eq.0) then
-					write(*,*) "In checkEmergingCells gcwmi = 0"
+					write(*,*) "In checkEmergingCells gcwmi = 0", nn, iic, kkk
+					write(*,*) gcwx, gcwy, gcwz
 				 endif
 				 gcwmj = dom(ib)%mwczoldmj(ii,jj,kk) ! dom(ib)%y id of the w mirror point in fluid cell
 				 gcwmk = dom(ib)%mwczoldmk(ii,jj,kk) ! dom(ib)%z id of the w mirror point in fluid cell
@@ -1937,6 +1939,7 @@
 				 ll = dom(ib)%mpcoldll(ii,jj,kk)  ! ll    id for layer at which nn marker is located
 				 if (ll.eq.2) then
 					write(*,*) "Warning Warning Waring p cell with ll = 2"
+					write(*,*) gcpx, gcpy, gcpz
 				 endif  
 				 iic = dom(ib)%mpcoldi(ii,jj,kk)  ! iii   ox location of the u ghost cell 
 				 jjc = dom(ib)%mpcoldj(ii,jj,kk)  ! jjc   oy location of the u ghost cell
@@ -1954,7 +1957,7 @@
 				 !                                 
 				 gcpmi = dom(ib)%mpcoldmi(ii,jj,kk) ! dom(ib)%x id of the u mirror cell 
 				 if (gcpmi.eq.0) then
-					write(*,*) "In checkEmergingCells gcpmi = 0"
+					write(*,*) "In checkEmergingCells gcpmi = 0", nn, iic, kkc
 				 endif
 				 gcpmj = dom(ib)%mpcoldmj(ii,jj,kk) ! dom(ib)%y id of the u mirror cell
 				 gcpmk = dom(ib)%mpcoldmk(ii,jj,kk) ! dom(ib)%z id of the u mirror cell
